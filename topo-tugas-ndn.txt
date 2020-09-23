@@ -1,0 +1,39 @@
+router
+
+# each line in this section represents one router and should have the following data
+# node  comment     lat         lon
+
+# Main Routers
+Makassar              NA                  -5.135399     119.423790
+Manado                NA                  1.474830      124.842079
+Palu                  NA                  -0.8917       119.8707
+Mamuju                NA                  -2.6748       118.8885
+Kendari               NA                  -2.6748       118.8885
+Ambon                 NA                  -3.69543      128.18141
+Tidore                NA                  0.674004      127.404087
+Ternate               NA                  0.7833302     127.3666652
+Halmahera Tengah      NA                  1.312123      128.484992
+Saparua               NA           	    -3.57493      128.647
+
+# Peers
+
+# link section defines point-to-point links between nodes and characteristics of these links
+link
+
+# Each line should be in the following format (only first two are required, the rest can be omitted)
+# srcNode   dstNode     bandwidth   metric  delay   queue
+# bandwidth: link bandwidth
+# metric: routing metric
+# delay:  link delay
+# queue:  MaxPackets for transmission queue on the link (both directions)
+# 
+
+Makassar          Manado                10Gbps        1       0.986459827ms    10
+Makassar          Palu                  10Gbps        1       1.055294745ms    10
+Makassar          Mamuju                10Gbps        1       5.613066753ms    10
+Makassar          Kendari               10Gbps        1       8.039475939ms	  10
+Makassar          Ambon                 10Gbps        1      15.029465938ms	  10
+Makassar          Tidore                10Gbps        1      24.028375878ms 	  10
+Makassar          Ternate               10Gbps        1      56.973749274ms 	  10
+Makassar          Halmahera Tengah      10Gbps        1       4.092738475ms 	  10
+Makassar          Saparua               10Gbps        1       9.038284936ms	  10
